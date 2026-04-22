@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>vrag.png</file>
+        <file>mag.png</file>
+    </qresource>
+</RCC>
