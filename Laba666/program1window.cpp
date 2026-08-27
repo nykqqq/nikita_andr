@@ -63,7 +63,7 @@ void Program1Window::setupUI()
     connect(appendJsonButton, &QPushButton::clicked, this, &Program1Window::appendToExistingJson);
     fileGroupLayout->addWidget(appendJsonButton);
 
-    // Кнопка 3: Просто сохранить (быстрая)
+    // Кнопка 3: Просто сохранить 
     saveButton = new QPushButton("3. Сохранить (в последний использованный файл)");
     saveButton->setStyleSheet("QPushButton { background-color: #FF9800; color: white; padding: 8px; }");
     connect(saveButton, &QPushButton::clicked, this, &Program1Window::saveToJson);
@@ -188,7 +188,7 @@ void Program1Window::saveToJson()
             appendToExistingJson();
             return;
         } else {
-            return; // Отмена
+            return; 
         }
     }
 
