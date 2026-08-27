@@ -43,4 +43,4 @@ private:
     QString currentJsonFile;
 };
 
-#endif // PROGRAM2WINDOW_H
+#endif 
