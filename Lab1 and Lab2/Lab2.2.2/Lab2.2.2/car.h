@@ -1,4 +1,4 @@
-// car.h
+
 #ifndef CAR_H
 #define CAR_H
 
@@ -8,51 +8,51 @@
 
 class Car {
 private:
-    std::string brand;                 // марка
-    std::string model;                  // модель
-    std::string licensePlate;           // гос. номер
-    std::vector<std::string> trunkItems; // вектор вещей в багажнике
+    std::string brand;                 // Г¬Г Г°ГЄГ 
+    std::string model;                  // Г¬Г®Г¤ГҐГ«Гј
+    std::string licensePlate;           // ГЈГ®Г±. Г­Г®Г¬ГҐГ°
+    std::vector<std::string> trunkItems; // ГўГҐГЄГІГ®Г° ГўГҐГ№ГҐГ© Гў ГЎГ ГЈГ Г¦Г­ГЁГЄГҐ
 
 protected:
-    // Метод для генерации случайного госномера
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї ГЈГҐГ­ГҐГ°Г Г¶ГЁГЁ Г±Г«ГіГ·Г Г©Г­Г®ГЈГ® ГЈГ®Г±Г­Г®Г¬ГҐГ°Г 
     std::string generateRandomLicensePlate() const;
 
-    // Проверка формата госномера
+    // ГЏГ°Г®ГўГҐГ°ГЄГ  ГґГ®Г°Г¬Г ГІГ  ГЈГ®Г±Г­Г®Г¬ГҐГ°Г 
     bool isValidLicensePlate(const std::string& plate) const;
 
 public:
-    // Конструктор по умолчанию
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
     Car();
 
-    // Конструктор полного заполнения
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЇГ®Г«Г­Г®ГЈГ® Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГї
     Car(const std::string& br, const std::string& mdl,
         const std::string& plate, const std::vector<std::string>& items);
 
-    // Конструктор копирования
+    // ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї
     Car(const Car& other);
 
-    // Деструктор
+    // Г„ГҐГ±ГІГ°ГіГЄГІГ®Г°
     ~Car();
 
-    // Оператор присваивания
+    // ГЋГЇГҐГ°Г ГІГ®Г° ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї
     Car& operator=(const Car& other);
 
-    // Геттеры
+    // ГѓГҐГІГІГҐГ°Г»
     std::string getBrand() const;
     std::string getModel() const;
     std::string getLicensePlate() const;
     std::vector<std::string> getTrunkItems() const;
 
-    // Сеттер для госномера
+    // Г‘ГҐГІГІГҐГ° Г¤Г«Гї ГЈГ®Г±Г­Г®Г¬ГҐГ°Г 
     bool setLicensePlate(const std::string& plate);
 
-    // Метод для вывода информации
+    // ГЊГҐГІГ®Г¤ Г¤Г«Гї ГўГ»ГўГ®Г¤Г  ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ
     void displayInfo() const;
 
-    // Операторы
+    // ГЋГЇГҐГ°Г ГІГ®Г°Г»
     Car operator+(const Car& other) const;
     Car operator-(const Car& other) const;
     Car operator/(const Car& other) const;
 };
 
-#endif // CAR_H
+#endif 
