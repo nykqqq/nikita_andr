@@ -41,4 +41,4 @@ private:
     void setupDoubleClickClear();
 };
 
-#endif // MAINWINDOW_H
+#endif 
