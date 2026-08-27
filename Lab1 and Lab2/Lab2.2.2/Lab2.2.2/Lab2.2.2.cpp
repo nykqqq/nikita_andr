@@ -40,7 +40,7 @@ int main() {
 
     std::cout << "\n";
 
-    // Тест оператора /
+    // Тест оператора 
     std::cout << "Оператор /:" << std::endl;
     Car resultDivide = car1 / car2;
     resultDivide.displayInfo();
@@ -52,8 +52,8 @@ int main() {
 
     std::cout << "\n=== Тестирование сеттера с проверкой ===" << std::endl;
     Car testCar;
-    testCar.setLicensePlate("INVALID");  // Неправильный формат
-    testCar.setLicensePlate("A123BC");   // Правильный формат
+    testCar.setLicensePlate("INVALID");  
+    testCar.setLicensePlate("A123BC");   
     testCar.displayInfo();
 
 
