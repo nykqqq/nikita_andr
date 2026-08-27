@@ -38,7 +38,7 @@ private slots:
 private:
     void setupUI();
     void appendToJsonFile(const QString& filePath, const PointOfInterest& poi);
-    bool validateAndCreatePoi(PointOfInterest& poi);  // Вынесем валидацию
+    bool validateAndCreatePoi(PointOfInterest& poi);  
 
     QLineEdit* nameEdit;
     QTextEdit* descriptionEdit;
