@@ -9,6 +9,7 @@
 
 using namespace std;
 
+
 class JaggedArray {
 private:
     vector<vector<string>> data;
