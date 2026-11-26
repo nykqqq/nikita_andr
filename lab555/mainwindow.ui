@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>650</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная №5 — Азбука Морзе</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="inputRow">
+      <item>
+       <layout class="QVBoxLayout" name="colText">
+        <item><widget class="QLabel" name="labelText"><property name="text"><string>Исходный текст</string></property></widget></item>
+        <item><widget class="QPlainTextEdit" name="textInput"/></item>
+        <item>
+         <layout class="QHBoxLayout" name="textButtons">
+          <item><widget class="QPushButton" name="btnLoadText"><property name="text"><string>Загрузить текст</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnSaveText"><property name="text"><string>Сохранить текст</string></property></widget></item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="colMorse">
+        <item><widget class="QLabel" name="labelMorse"><property name="text"><string>Код Морзе</string></property></widget></item>
+        <item><widget class="QPlainTextEdit" name="morseOutput"/></item>
+        <item>
+         <layout class="QHBoxLayout" name="morseButtons">
+          <item><widget class="QPushButton" name="btnLoadMorse"><property name="text"><string>Загрузить Морзе</string></property></widget></item>
+          <item><widget class="QPushButton" name="btnSaveMorse"><property name="text"><string>Сохранить Морзе</string></property></widget></item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="actionRow">
+      <item><widget class="QPushButton" name="btnEncode"><property name="text"><string>Кодировать (п.1)</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnTransmit"><property name="text"><string>Передача — внести ошибку (п.2)</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnDecode"><property name="text"><string>Декодировать (п.3)</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="outputRow">
+      <item>
+       <layout class="QVBoxLayout" name="colDecoded">
+        <item><widget class="QLabel" name="labelDecoded"><property name="text"><string>Декодированный текст</string></property></widget></item>
+        <item><widget class="QPlainTextEdit" name="textDecoded"/></item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="colVariants">
+        <item><widget class="QLabel" name="labelVariants"><property name="text"><string>Варианты восстановления</string></property></widget></item>
+        <item><widget class="QListWidget" name="listVariants"/></item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"><property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>22</height></rect></property></widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
